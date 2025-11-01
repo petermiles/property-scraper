@@ -218,6 +218,20 @@ url = "https://example-property-site.com/listings"
 
 Change it to any URL you want to scrape (though the selectors might need adjustment for different sites). See [LEARNING_WITH_CURSOR.md](LEARNING_WITH_CURSOR.md) for a guide on adapting the scraper for new sites.
 
+## ⚠️ Verify Your Results
+
+**IMPORTANT:** This script was built with AI assistance and its accuracy has not been verified.
+
+**Before trusting the output, you should:**
+
+1. **Spot check manually** - Open the website and verify a few properties match
+2. **Check the count** - Does `listing_count` match what the website shows?
+3. **Verify fields** - Are addresses, prices, and other details correct?
+4. **Compare formats** - Does the output structure make sense?
+5. **Run multiple times** - Are results consistent?
+
+**Remember:** AI-generated code can have bugs. Always verify data before using it for important decisions.
+
 ## Next Steps
 
 Once you have the output, check out [OUTPUT_FORMAT.md](OUTPUT_FORMAT.md) to understand the structure of the data you've collected.

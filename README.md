@@ -15,6 +15,7 @@ A Python web scraper that extracts rental property listings from property manage
 ## What This Tool Does
 
 This scraper:
+
 - **Visits property listing websites** and finds all available rental properties
 - **Handles modern websites** that load content dynamically with JavaScript
 - **Extracts property details** like addresses, prices, bedrooms, bathrooms, and more
@@ -88,6 +89,7 @@ The scraper outputs JSON data like this:
 ## Support
 
 If you run into issues:
+
 1. Check [SETUP.md](SETUP.md) to ensure everything is installed correctly
 2. Review [RUNNING_THE_SCRIPT.md](RUNNING_THE_SCRIPT.md) for common problems
 3. Read error messages carefully - they usually tell you what's wrong
@@ -106,4 +108,3 @@ This project is provided as-is for educational and personal use.
 - Use responsibly and ethically
 - This tool is not affiliated with any property management company or organization
 - Users are solely responsible for ensuring their use complies with applicable laws and website terms
-
