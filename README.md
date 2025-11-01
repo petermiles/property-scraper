@@ -2,15 +2,45 @@
 
 A Python web scraper that extracts rental property listings from property management websites. This tool automatically navigates websites, handles dynamic JavaScript content, and collects detailed information about available rental properties.
 
-## ⚠️ Disclaimer
+## ⚠️ Important Disclaimers
+
+### Educational Purpose Only
 
 **This software is provided for educational purposes only.**
 
 - The author is not responsible for how this code is used
 - Web scraping may violate website terms of service
-- Always respect robots.txt and website terms
+- Always respect robots.txt and website terms of service
 - Use responsibly and ethically
-- This tool is not affiliated with any property management company
+- This tool is not affiliated with any property management company or organization
+- Users are solely responsible for ensuring their use complies with applicable laws and website terms
+
+### AI-Generated Code Warning
+
+**⚠️ CRITICAL: The accuracy of this script has NOT been verified.**
+
+This project was built using Cursor AI, an AI-powered code assistant. While AI tools like Cursor are incredibly helpful, **you should never blindly trust AI-generated code or data**.
+
+**Why You Must Verify:**
+
+1. **AI makes mistakes** - Code may have bugs, logic errors, or security vulnerabilities
+2. **AI doesn't test** - Generated code often hasn't been thoroughly tested
+3. **AI can hallucinate** - Sometimes AI generates code that looks correct but doesn't work
+4. **Context matters** - AI might misunderstand requirements or use outdated patterns
+5. **Data accuracy** - Scraped data may be incomplete, incorrect, or missing fields
+
+**What You Should Do:**
+
+- ✅ **Test the code** before using it for anything important
+- ✅ **Review the logic** to understand what it's doing
+- ✅ **Verify the output** - Check if scraped data matches what you see on the website
+- ✅ **Run it multiple times** - AI code may have edge cases that fail intermittently
+- ✅ **Read error messages** - If something breaks, understand why before fixing
+- ✅ **Compare results** - Manually verify a few properties match the website
+
+**Remember:** AI is a powerful tool, but you are responsible for verifying everything it produces. Trust, but verify!
+
+**See [LEARNING_WITH_CURSOR.md](LEARNING_WITH_CURSOR.md) for more on the dangers of not verifying AI code.**
 
 ## What This Tool Does
 

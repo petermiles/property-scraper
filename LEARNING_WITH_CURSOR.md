@@ -2,6 +2,27 @@
 
 This document explains how Cursor AI was used to build this scraper, giving you insight into modern AI-assisted development.
 
+## ⚠️ Critical Lesson: Trust, But Verify
+
+**Before we dive in, this is the most important lesson you'll learn:**
+
+**Never blindly trust AI-generated code.** This project was built with Cursor AI, and while it's incredibly powerful, AI tools can:
+
+- Generate code with bugs or logic errors
+- Create code that looks correct but doesn't work
+- Miss edge cases or security vulnerabilities
+- Produce data that's incomplete or inaccurate
+- Use outdated patterns or misunderstand requirements
+
+**Always verify:**
+- ✅ Test the code yourself
+- ✅ Review the logic
+- ✅ Check the output accuracy
+- ✅ Run it multiple times
+- ✅ Understand what it's doing
+
+AI is a powerful assistant, but **you are responsible for verifying everything it produces.** This is true for Cursor, ChatGPT, GitHub Copilot, or any AI tool.
+
 ## What is Cursor?
 
 Cursor is an AI-powered code editor that helps developers write code faster and more effectively. Think of it as having a coding assistant that understands context and can help you build entire projects through conversation.
@@ -216,6 +237,60 @@ This project demonstrates:
 - User-friendly output
 
 All built through iterative conversation with Cursor, making the development process both efficient and educational.
+
+## The Dangers of Not Verifying AI Code
+
+### Real-World Consequences
+
+When you don't verify AI-generated code, you risk:
+
+1. **Security Vulnerabilities**
+   - AI might generate code that exposes sensitive data
+   - Missing input validation can lead to injection attacks
+   - Authentication/authorization might be implemented incorrectly
+
+2. **Data Loss or Corruption**
+   - Code might delete or modify data incorrectly
+   - Race conditions in concurrent code
+   - Missing error handling can cause silent failures
+
+3. **Financial Loss**
+   - Bugs in payment processing code
+   - Incorrect calculations in financial systems
+   - Automation that makes wrong decisions
+
+4. **Legal Issues**
+   - Code that violates privacy laws (GDPR, CCPA)
+   - Scraping that violates terms of service
+   - Missing consent mechanisms
+
+5. **Wasted Time**
+   - Code that doesn't work and needs complete rewrite
+   - Debugging issues that could have been caught early
+   - Relying on incorrect data for decisions
+
+### The Verification Process
+
+**Every time Cursor generates code, follow these steps:**
+
+1. **Read the code** - Don't just copy-paste
+2. **Understand the logic** - What is it trying to do?
+3. **Test immediately** - Run it with simple inputs
+4. **Check edge cases** - What happens with empty data? Invalid input?
+5. **Review for security** - Are there any obvious vulnerabilities?
+6. **Verify output** - Does the result match expectations?
+7. **Test in production-like environment** - Don't deploy untested code
+
+### Example: Why Verification Matters
+
+During the development of this scraper, Cursor generated code that:
+
+- Initially missed most properties (only found 14 out of 68)
+- Had bugs in scrolling logic that required multiple iterations
+- Needed manual fixes for address extraction patterns
+- Required verification that all 68 properties were actually captured
+
+**Without verification, we would have had incorrect data.**
 
 ## Trying It Yourself
 
