@@ -65,13 +65,13 @@ The scraper outputs JSON data like this:
 {
   "status": "success",
   "timestamp": "2025-10-31T16:00:00",
-  "source_url": "https://www.emeraldpm.com/home_rentals",
+  "source_url": "https://example-property-site.com/listings",
   "data": {
     "scraped_at": "2025-10-31T16:00:00",
     "listing_count": 24,
     "rental_listings": [
       {
-        "address": "123 Main St, Eugene, OR 97401",
+        "address": "123 Main St, City, State 12345",
         "price": "$1,200/month",
         "beds": "2 bed",
         "baths": "1 bath",

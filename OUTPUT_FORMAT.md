@@ -62,7 +62,7 @@ The `contact_info` object contains:
 {
   "phone": ["(541) 555-1234", "(541) 555-5678"],
   "email": ["contact@example.com"],
-  "address": ["123 Main St, Eugene, OR 97401"]
+  "address": ["123 Main St, City, State 12345"]
 }
 ```
 
@@ -74,12 +74,12 @@ The `rental_listings` array is where the real property data lives. Each item in 
 
 ```json
 {
-  "address": "123 Main Street, Eugene, OR 97401",
+  "address": "123 Main Street, City, State 12345",
   "price": "$1,200/month",
   "beds": "2 bed",
   "baths": "1 bath",
-  "property_link": "https://emerald.appfolio.com/listings/...",
-  "property_url": "https://emerald.appfolio.com/listings/...",
+  "property_link": "https://example-site.com/listings/...",
+  "property_url": "https://example-site.com/listings/...",
   "description": "Beautiful 2-bedroom apartment...",
   "features": ["Hardwood floors", "Updated kitchen"],
   "amenities": ["Laundry", "Parking"],
