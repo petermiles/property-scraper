@@ -3185,9 +3185,9 @@ Reset Map</button>
 
     rtCommonProps["common.mapbox.js.override"] =false;
 
-    rtCommonProps["common.here.appId"] = '[HERE_APP_ID_REDACTED]';
+    rtCommonProps["common.here.appId"] = 'iYvDjIQ2quyEu0rg0hLo';
 
-    rtCommonProps["common.here.appCode"] = '[HERE_APP_CODE_REDACTED]';
+    rtCommonProps["common.here.appCode"] = '1hcIxLJcbybmtBYTD9Z1UA';
 
     rtCommonProps["isCoverage.test"] =false;
 
