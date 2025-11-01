@@ -3181,7 +3181,7 @@ Reset Map</button>
 
     rtCommonProps["rt.pushnotifs.force.button"] =true;
 
-    rtCommonProps["common.mapbox.token"] = '[MAPBOX_TOKEN_REDACTED]';
+    rtCommonProps["common.mapbox.token"] = 'pk.eyJ1IjoiZGFubnliMTIzIiwiYSI6ImNqMGljZ256dzAwMDAycXBkdWxwbDgzeXYifQ.Ck5P-0NKPVKAZ6SH98gxxw';
 
     rtCommonProps["common.mapbox.js.override"] =false;
 
