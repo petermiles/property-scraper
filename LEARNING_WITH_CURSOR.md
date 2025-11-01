@@ -15,6 +15,7 @@ This document explains how Cursor AI was used to build this scraper, giving you 
 - Use outdated patterns or misunderstand requirements
 
 **Always verify:**
+
 - ✅ Test the code yourself
 - ✅ Review the logic
 - ✅ Check the output accuracy
@@ -245,21 +246,25 @@ All built through iterative conversation with Cursor, making the development pro
 When you don't verify AI-generated code, you risk:
 
 1. **Security Vulnerabilities**
+
    - AI might generate code that exposes sensitive data
    - Missing input validation can lead to injection attacks
    - Authentication/authorization might be implemented incorrectly
 
 2. **Data Loss or Corruption**
+
    - Code might delete or modify data incorrectly
    - Race conditions in concurrent code
    - Missing error handling can cause silent failures
 
 3. **Financial Loss**
+
    - Bugs in payment processing code
    - Incorrect calculations in financial systems
    - Automation that makes wrong decisions
 
 4. **Legal Issues**
+
    - Code that violates privacy laws (GDPR, CCPA)
    - Scraping that violates terms of service
    - Missing consent mechanisms
