@@ -645,26 +645,26 @@ def scrape_rentals(url):
             "address": []
         }
         
-            # Find phone numbers using regex
-            # Pattern matches formats like: (555) 123-4567, 555-123-4567, 555.123.4567, 5551234567
-            # \(? = optional opening parenthesis, \d{3} = exactly 3 digits, etc.
-            phone_pattern = r'\(?\d{3}\)?[-.\s]?\d{3}[-.\s]?\d{4}'
-            phones = re.findall(phone_pattern, page_text)
-            contact_info["phone"] = list(set(phones[:10]))  # Remove duplicates (set) and limit to 10 unique
-            
-            # Find email addresses using regex
-            # Pattern matches standard email format: username@domain.com
-            # \b = word boundary (ensures we match complete emails, not parts of words)
-            email_pattern = r'\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,}\b'
-            emails = re.findall(email_pattern, page_text)
-            contact_info["email"] = list(set(emails[:10]))  # Remove duplicates and limit to 10 unique
-            
-            # Try to find addresses in text
-            # Pattern matches: "123 Main Street, City, ST 12345" or similar formats
-            # Looks for street numbers, street names (Street, St, Avenue, etc.), state, zip
-            address_pattern = r'\d+\s+[\w\s]+(?:street|st|avenue|ave|road|rd|drive|dr|lane|ln|way|blvd|boulevard|ct|court|circle|cir|place|pl)[\s,]*[\w\s]*(?:,\s*)?[A-Z]{2}\s+\d{5}?'
-            addresses = re.findall(address_pattern, page_text, re.IGNORECASE)
-            contact_info["address"] = list(set(addresses[:10]))  # Remove duplicates and limit to 10 unique
+        # Find phone numbers using regex
+        # Pattern matches formats like: (555) 123-4567, 555-123-4567, 555.123.4567, 5551234567
+        # \(? = optional opening parenthesis, \d{3} = exactly 3 digits, etc.
+        phone_pattern = r'\(?\d{3}\)?[-.\s]?\d{3}[-.\s]?\d{4}'
+        phones = re.findall(phone_pattern, page_text)
+        contact_info["phone"] = list(set(phones[:10]))  # Remove duplicates (set) and limit to 10 unique
+        
+        # Find email addresses using regex
+        # Pattern matches standard email format: username@domain.com
+        # \b = word boundary (ensures we match complete emails, not parts of words)
+        email_pattern = r'\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,}\b'
+        emails = re.findall(email_pattern, page_text)
+        contact_info["email"] = list(set(emails[:10]))  # Remove duplicates and limit to 10 unique
+        
+        # Try to find addresses in text
+        # Pattern matches: "123 Main Street, City, ST 12345" or similar formats
+        # Looks for street numbers, street names (Street, St, Avenue, etc.), state, zip
+        address_pattern = r'\d+\s+[\w\s]+(?:street|st|avenue|ave|road|rd|drive|dr|lane|ln|way|blvd|boulevard|ct|court|circle|cir|place|pl)[\s,]*[\w\s]*(?:,\s*)?[A-Z]{2}\s+\d{5}?'
+        addresses = re.findall(address_pattern, page_text, re.IGNORECASE)
+        contact_info["address"] = list(set(addresses[:10]))  # Remove duplicates and limit to 10 unique
         
         # Extract page metadata
         title_elem = doc('title')
