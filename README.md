@@ -67,6 +67,7 @@ This project includes several guides to help you understand and use the scraper:
 - **[RUNNING_THE_SCRIPT.md](RUNNING_THE_SCRIPT.md)** - Step-by-step guide to running the scraper and viewing results
 - **[OUTPUT_FORMAT.md](OUTPUT_FORMAT.md)** - Understanding the JSON output structure
 - **[LEARNING_WITH_CURSOR.md](LEARNING_WITH_CURSOR.md)** - How this project was built using Cursor AI
+- **[CURSOR_CHAT_LOG.md](CURSOR_CHAT_LOG.md)** - Complete conversation log from Cursor AI that created this entire project
 
 ## Project Structure
 
@@ -79,7 +80,8 @@ property-scraper/
 ├── HOW_IT_WORKS.md     # Technical deep dive
 ├── RUNNING_THE_SCRIPT.md # Usage guide
 ├── OUTPUT_FORMAT.md    # Output documentation
-└── LEARNING_WITH_CURSOR.md # Development story
+├── LEARNING_WITH_CURSOR.md # Development story
+└── CURSOR_CHAT_LOG.md  # Complete Cursor AI conversation log
 ```
 
 ## Requirements
