@@ -96,3 +96,14 @@ If you run into issues:
 
 This project is provided as-is for educational and personal use.
 
+## Disclaimer
+
+**This software is provided for educational purposes only.**
+
+- The author is not responsible for how this code is used
+- Web scraping may violate website terms of service
+- Always respect robots.txt and website terms of service
+- Use responsibly and ethically
+- This tool is not affiliated with any property management company or organization
+- Users are solely responsible for ensuring their use complies with applicable laws and website terms
+
